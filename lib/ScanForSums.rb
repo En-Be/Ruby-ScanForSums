@@ -6,6 +6,8 @@ def ScanForSums(arg)
         result.push(equation[0].to_i + equation[2].to_i)
     elsif equation[1] == '*'
         result.push(equation[0].to_i * equation[2].to_i)
+    elsif equation[1] == '-'
+        result.push(equation[0].to_i - equation[2].to_i)
     end
 
     result
