@@ -4,6 +4,8 @@ def ScanForSums(arg)
     equation = arg.split(' ')
     if equation[1] == '+'
         result.push(equation[0].to_i + equation[2].to_i)
+    elsif equation[1] == '*'
+        result.push(equation[0].to_i * equation[2].to_i)
     end
 
     result
