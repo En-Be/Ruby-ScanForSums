@@ -25,7 +25,7 @@ Input | Output
     ```
 - Call the method with a sum in a string:
     ```
-    CountSmileys('1 + 1')
+    ScanForSums('1 + 1')
     ```
     Which outputs:
     ```
