@@ -2,6 +2,11 @@ def ScanForSums(arg)
     result = [arg]
 
     equation = arg.split(' ')
+
+    if equation[0].to_i.to_s != equation[0] || equation[0].to_i.to_s != equation[0]
+        raise("Input must be a valid mathematical string")
+    end
+
     if equation[1] == '+'
         result.push(equation[0].to_f + equation[2].to_f)
     elsif equation[1] == '*'
@@ -19,11 +24,3 @@ end
 
 
 
-# def ScanForSums(arg)
-#     result = []
-#     equation = arg.split(' ')
-#     # print("#{equation[0].to_i} #{equation[1].to_sym} #{equation[2].to_i}")
-#     sum = equation[0].to_i, equation[1].to_sym, equation[2].to_i
-#     result.push(sum[0].public_send(sum[1],sum[2]))
-#     result
-# end

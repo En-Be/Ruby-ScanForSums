@@ -23,4 +23,8 @@ describe 'ScanForSums' do
     it 'Returns 1 / 2 as 0.5' do
         expect(ScanForSums("1 / 2")).to eq ["1 / 2", 0.5]
     end
+
+    it 'Returns an error when the first and last input characters are not numbers' do
+        expect{ScanForSums("a + 1")}.to raise_error("Input must be a valid mathematical string")
+    end
 end
