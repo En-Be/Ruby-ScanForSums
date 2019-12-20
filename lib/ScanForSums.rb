@@ -3,13 +3,13 @@ def ScanForSums(arg)
 
     equation = arg.split(' ')
     if equation[1] == '+'
-        result.push(equation[0].to_i + equation[2].to_i)
+        result.push(equation[0].to_f + equation[2].to_f)
     elsif equation[1] == '*'
-        result.push(equation[0].to_i * equation[2].to_i)
+        result.push(equation[0].to_f * equation[2].to_f)
     elsif equation[1] == '-'
-        result.push(equation[0].to_i - equation[2].to_i)
+        result.push(equation[0].to_f - equation[2].to_f)
     elsif equation[1] == '/'
-        result.push(equation[0].to_i / equation[2].to_i)
+        result.push(equation[0].to_f / equation[2].to_f)
     end
 
     result
